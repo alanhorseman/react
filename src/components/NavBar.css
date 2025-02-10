@@ -1,0 +1,28 @@
+div {
+  list-style: none;
+  font-size: 25px;
+}
+
+.navBar {
+  display: flex;
+  width: 110%;
+  background-color: beige;
+  margin: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 20px;
+}
+
+ul a {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
+
+.imgLogo {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  display: flex;
+  margin-left: 20px;
+}
