@@ -1,0 +1,16 @@
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
+
+export const MyCard = ({ producto }) => (
+  <Card key={producto.id} style={{ width: "18rem" }}>
+    <Card.Img variant="top" src={producto.img} />
+    <Card.Body>
+      <Card.Title>{producto.name}</Card.Title>
+      <Card.Text>{producto.detail}</Card.Text>
+      <Link to={`/detail/${producto.id}`} >
+        <Button variant="primary">Ver detalles</Button>
+      </Link>
+    </Card.Body>
+  </Card>
+);
