@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { Container } from "react-bootstrap"
 
 import data from "../data/MOCK_DATA.json"

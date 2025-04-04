@@ -13,6 +13,7 @@ export const NavBar = () => (
           <Nav.Link to="/" as={NavLink} ><span className="nav-link">Home</span></Nav.Link>
           <Nav.Link to="/category/remera/" as={NavLink} >Remeras</Nav.Link>
           <Nav.Link to="/category/pantalon/" as={NavLink} >Pantalon</Nav.Link>
+          <Nav.Link to="/cart" as={NavLink} >Carrito</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

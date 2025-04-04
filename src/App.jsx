@@ -1,21 +1,26 @@
-import { NavBar } from './components/NavBar'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { NavBar } from "./components/NavBar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Home } from './views/Home';
-import { ProductDetail } from './views/ProductDetail';
+import { Home } from "./views/Home";
+import { ProductDetail } from "./views/ProductDetail";
+import { CartProvider } from "./contexts/CartContext";
+import { Cart } from "./components/Cart";
 
 function App() {
   return (
-    <BrowserRouter>
-    <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/category/:id" element={<Home />} />
-        <Route path="/detail/:id" element={<ProductDetail />} />
-        <Route path="*" element="404 NOT FOUND" />
-      </Routes>
-    </BrowserRouter>
-  )
+    <CartProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/category/:id" element={<Home />} />
+          <Route path="/detail/:id" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element="404 NOT FOUND" />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
+  );
 }
 
-export default App
+export default App;
