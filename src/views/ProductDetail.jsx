@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext, use } from "react";
-import data from "../data/MOCK_DATA.json";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import {ItemCount} from "../components/ItemCount";
 import { CartContext } from "../contexts/CartContext";
+import { getFirestore, getDoc, doc } from "firebase/firestore";
 
 
 export const ProductDetail = () => {
@@ -16,13 +16,12 @@ export const ProductDetail = () => {
 
 
   useEffect(() =>{
-    new Promise ((resolve, reject) => {
-      setTimeout(() => resolve(data), 2000)
-    })
-    .then(respuesta => {
-      const finded = respuesta.find(i => i.id === Number(id))
-      if (finded) setProducto(finded)
-      else alert("no existe")
+    const db = getFirestore();
+    const docRef = doc(db, "products", id);
+
+    getDoc(docRef)
+    .then((snapshot) => {
+      setProducto({id: snapshot.id, ...snapshot.data()})
     })
     .finally (() => setLoading(false))
   }, [id])
@@ -36,9 +35,10 @@ export const ProductDetail = () => {
   return (
     <Container>
       <h1>{producto.name}</h1>
-      <img src={producto.img} width = {200}/>
-      <h2>{producto.detail}</h2>
+      <img src={producto.image} width = {200}/>
+      <h2>{producto.description}</h2>
       <h2>Stock: {producto.stock}</h2>
+      <h2>Precio: {producto.price}</h2>
       <ItemCount stock={producto.stock} add={add}/>
     </Container>
   )
