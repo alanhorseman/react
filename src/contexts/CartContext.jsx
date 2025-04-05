@@ -8,7 +8,6 @@ export const CartProvider = ({children}) => {
 
   const addProduct = (product) => {
     setProducts([...products, product]);
-    console.dir(products);
   }
 
   const onRemove = () => {
