@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { CartContext } from "../contexts/CartContext";
+import { CartContext } from "../../contexts/CartContext";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 const initialValuesUser = {
