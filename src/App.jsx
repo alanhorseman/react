@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./views/Home";
 import { ProductDetail } from "./views/ProductDetail";
 import { CartProvider } from "./contexts/CartContext";
-import { Cart } from "./components/Cart";
+import { Cart } from "./components/cart/Cart";
 
 function App() {
   return (

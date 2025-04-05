@@ -40,15 +40,18 @@ export const Cart = () => {
   return (
     <>
       <h1>Carrito</h1>
-      {products.map((product) => (
-        <div key={product.id}>
-          <h2>{product.name}</h2>
-          <img src={product.image} width={200} alt={product.name} />
-          <h3>Precio: ${product.price}</h3>
-          <h3>Cantidad: {product.count}</h3>
-          <h3>Subtotal: ${product.price * product.count}</h3>
-        </div>
-      ))}
+      <div className="cart">
+        {products.map((product) => (
+          <div key={product.id}>
+            <h2>{product.name}</h2>
+            <img src={product.image} width={200} alt={product.name} />
+            <h3>Precio: ${product.price}</h3>
+            <h3>Cantidad: {product.count}</h3>
+            <h3>Subtotal: ${product.price * product.count}</h3>
+          </div>
+        ))}
+      </div>
+
       <section>
         <div>
           <h3>Total: {total}</h3>
