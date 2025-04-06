@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cardContainerHome {
+  display: flex;
+  width: auto;
+}
+
+.imgCarddHome {
+  height: 70%;
+
+}
+
+.infoCardHome {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.cardTitleHome {
+  font-weight: 500;
+  align-self: center;
+  height: 10%;
+}
+
+.btnContainerHome {
+  height: 10%;
+}
+
+.btnCardHome {
+  width: 100%;
+  height: 40px;
+  background-color: #7DE9C6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  color: black;
+  font-weight: 500;
+}
