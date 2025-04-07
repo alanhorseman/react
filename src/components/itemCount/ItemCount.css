@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerItemCount {
+  flex-direction: column;
+  width: 100%;
+
+  justify-content: center;
+}
+
+.containerCount {
+  width: 100%;
+}
+
+.groupCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.containerBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.countBtn {
+  background-color: transparent;
+  color: black;
+  border: 1px solid grey;
+}
+
+.countBtn:hover {
+  background-color: rgba(70, 70, 70, 0.582);
+  cursor: pointer;
+}
+

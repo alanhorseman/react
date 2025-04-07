@@ -6,7 +6,7 @@ import "./MyCard.css";
 
 export const MyCard = ({ producto }) => (
   <Container className="cardContainerHome">
-    <Card key={producto.id} style={{ width: "18rem" }}>
+    <Card className="cardHome" key={producto.id}>
       <Card.Img className="imgCarddHome" variant="top" src={producto.image} />
       <Card.Body>
         <Container className="infoCardHome" >

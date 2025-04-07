@@ -6,7 +6,11 @@
 
 .cardContainerHome {
   display: flex;
-  width: auto;
+  width: auto !important;
+}
+
+.cardHome {
+  width: 18rem;
 }
 
 .imgCarddHome {
@@ -41,3 +45,4 @@
   color: black;
   font-weight: 500;
 }
+

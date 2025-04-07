@@ -1,9 +1,11 @@
 import Container from "react-bootstrap/Container";
 
-import {MyCard} from "./MyCard"
+import {MyCard} from "./myCard/MyCard"
+
+import "./CardList.css";
 
 export const CardList = ({productos}) => (
-  <Container className="d-flex flex-wrap mt-3">
+  <Container className="CardListContainer">
     {productos.map(producto => (
       <MyCard key={producto.id} producto={producto} />
     ))}
