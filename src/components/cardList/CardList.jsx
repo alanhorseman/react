@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 
-import {MyCard} from "./myCard/MyCard"
+import {MyCard} from "../myCard/MyCard";
 
 import "./CardList.css";
 

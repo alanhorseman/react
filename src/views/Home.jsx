@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
-import { CardList } from "../components/CardList";
+import { CardList } from "../components/cardList/CardList";
 
 import {
   getFirestore,
