@@ -10,7 +10,7 @@ export const NavBar = () => (
       <Container>
         <Navbar.Brand href="#home">KARUNE</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link to="/" as={NavLink} ><span className="nav-link">Home</span></Nav.Link>
+          <Nav.Link to="/" as={NavLink} >Home</Nav.Link>
           <Nav.Link to="/category/remeras/" as={NavLink} >Remeras</Nav.Link>
           <Nav.Link to="/category/pantalones/" as={NavLink} >Pantalones</Nav.Link>
           <Nav.Link to="/cart" as={NavLink} >Carrito</Nav.Link>
