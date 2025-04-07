@@ -1,12 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import {ItemCount} from "../components/itemCount/ItemCount";
-import { CartContext } from "../contexts/CartContext";
 import { getFirestore, getDoc, doc } from "firebase/firestore";
-
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+
+import {ItemCount} from "../../components/itemCount/ItemCount";
+import { CartContext } from "../../contexts/CartContext";
 import "./ProductDetail.css";
 
 export const ProductDetail = () => {

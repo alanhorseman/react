@@ -1,8 +1,7 @@
-# React + Vite
+# Entrega Final
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Link de Netlify: https://karune-coder.netlify.app/
 
-Currently, two official plugins are available:
+Aquellos archivos a los que decidi ponerle un poco de css los meti en carpetas como cardList, cart, itemCount, myCard y ProductDetail.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cree una carpeta contexts para colocar los contextos, aunque solo puse 1 que fue como el ejemplo que hizo el clases, no se me ocurria que otro poder aplicar. 
